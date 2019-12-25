@@ -1,0 +1,14 @@
+image:
+  file: .gitpod.Dockerfile
+
+ports:
+  - port: 6080
+    onOpen: open-preview
+  - port: 5900
+    onOpen: ignore
+  - port: 35900
+    onOpen: ignore
+
+tasks:
+  - init: npm install && ./scripts/install-deps.js && ./scripts/build-native.js
+    command: npm start
