@@ -15,6 +15,7 @@ RUN sudo apt-get update \
     libasound2-dev \
     libgtk-3-dev \
     libnss3-dev \
+    libsecret-1-dev \
     && sudo rm -rf /var/lib/apt/lists/*
 USER gitpod
 # Apply user-specific settings
