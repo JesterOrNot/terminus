@@ -11,4 +11,4 @@ ports:
 
 tasks:
   - init: npm install && ./scripts/install-deps.js && ./scripts/build-native.js
-    command: npm start
+    command: cross-env TERMINUS_DEV=1 electron app --debug --no-sandbox
